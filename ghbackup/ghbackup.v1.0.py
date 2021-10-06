@@ -36,12 +36,10 @@ def scan_for_arguments():
 #<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 def run_git_commands():
 #  os.system("cd ~/mycode")
-  commit_message=input('Commit comment: ')
   os.chdir("/home/student/mycode")
   os.system('touch lth_ghbackup.txt')
   os.system('git add *') 
-#  os.system('git commit -m \"studying for logic\"')
-  os.system('git commit -m "'+ commit_message +'"')
+  os.system('git commit -m \"studying for logic\"')
   os.system('git push origin') 
 #<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
 def main():
